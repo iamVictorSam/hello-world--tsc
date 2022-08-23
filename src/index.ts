@@ -64,4 +64,26 @@ const greet = (name: string | null | undefined ) =>{
     }
 }
 
-greet()
+greet('sam')
+
+// Optional chaining
+
+type Customer = {
+    birthday?: Date
+}
+
+const getCustomers = (id: number): Customer | null | undefined => {
+    // Optional property access operation
+    return id > 0 ? { birthday: new Date() } : null;
+}
+
+const customer = getCustomers(2);
+
+console.log(customer?.birthday?.getFullYear())
+
+// Optional element access operator
+// customer?.[0]
+
+// optional call
+const log: any = null;
+log?.('a')
