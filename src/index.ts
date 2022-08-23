@@ -32,3 +32,21 @@ const medium = Size.Large
 
 console.log(medium)
 //note: ts assigns no.s serially to the rest enums
+
+
+// function
+//When using functions in typescript, always annotate your functions (specify the return type).
+
+const getAddedNum = (param: number): number =>{
+   return Math.floor(Math.random() * 9) + param
+}
+
+console.log(getAddedNum(3))
+
+const calculateTax = (year: number, tax = 0.2) => {
+    if (tax > 0.2)
+        return year * tax
+    return year * 0.4
+}
+
+console.log(calculateTax(2022, 0.1))
