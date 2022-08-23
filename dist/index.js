@@ -1,7 +1,10 @@
 "use strict";
-const x = 'this';
-let age = 4;
-if (age > 2)
-    age += 23;
-console.log('im young');
+const getAge = (year) => {
+    2022 - year;
+};
+const ages = [];
+const names = ['sam', 'victor', 'jess'];
+const tryTuple = ['sam', 24, false];
+tryTuple.push(3);
+console.log(tryTuple);
 //# sourceMappingURL=index.js.map

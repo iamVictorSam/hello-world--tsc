@@ -12,3 +12,12 @@ const getAge = (year: any)=>{
 const ages: number[] = [];
 
 const names = ['sam', 'victor', 'jess']
+
+
+//Tuples
+//A tuple is a Fixed Length array in Typescript where each element has a type.
+const tryTuple: [String, number] = ['sam', 24];
+
+// Try using only 2 values max in your tuple else your code will be messy
+
+console.log(tryTuple)
