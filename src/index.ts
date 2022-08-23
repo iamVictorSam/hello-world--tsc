@@ -87,3 +87,5 @@ console.log(customer?.birthday?.getFullYear())
 // optional call
 const log: any = null;
 log?.('a')
+
+//this code will only run only if this log is a function
