@@ -43,4 +43,13 @@ const makeBread: ProduceBread = {
 
 //Note: the produceBread type has properties of both mould and bake
 
+// Listeral type
+// string and numbers can be limited to a specific value in ts. 
+
+type Quantity = 20 | 50;
+
+const quatity: Quantity = 50;
+
+const metric: 'cm' | 'in' = 'in'
+
 
