@@ -53,3 +53,15 @@ const quatity: Quantity = 50;
 const metric: 'cm' | 'in' = 'in'
 
 
+// Nullable types
+// by default, ts is very strict when using null values. but some sometimes, we might wanna output something else if  the input is null.. to acheive this, the nullable type was introduced
+
+const greet = (name: string | null | undefined ) =>{
+    if (name)
+        console.log(`Hello ${name}`)
+    else {
+        console.log('Hola')
+    }
+}
+
+greet()
